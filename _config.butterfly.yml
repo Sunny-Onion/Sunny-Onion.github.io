@@ -312,9 +312,9 @@ share:
   addtoany:
     item: facebook,x,wechat,sina_weibo,facebook_messenger,email,copy_link
 
-# 评论（Giscus，等开 Discussions 后再启用）
+# 评论（Giscus，基于 GitHub Discussions）
 comments:
-  use: ''
+  use: Giscus
   text: true
   lazyload: false
   count: false
@@ -322,14 +322,18 @@ comments:
 
 giscus:
   repo: Sunny-Onion/sunny-onion.github.io
-  repo_id:
-  category: Announcements
-  category_id:
-  mapping: pathname
-  strict: 0
-  reactions_enabled: 1
-  emit_metadata: 0
-  lang: zh-CN
+  repo_id: R_kgDOVvIxEA
+  category_id: DIC_kwDOVvIxEM4DLMT0
+  light_theme: light
+  dark_theme: dark
+  js:
+  option:
+    data-mapping: pathname
+    data-strict: 0
+    data-reactions-enabled: 1
+    data-emit-metadata: 0
+    data-input-position: bottom
+    data-lang: zh-CN
 
 # --------------------------------------
 # 美化 / 动效
