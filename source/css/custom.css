@@ -1,0 +1,124 @@
+/* Sunny-Onion's blog —— 自定义样式 */
+
+/* ---------- 开屏动画（头像淡入） ---------- */
+.pl-lock body {
+  visibility: hidden;
+}
+
+#pl-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fdfdfd;
+  transition: opacity 0.6s ease;
+}
+
+html[data-theme='dark'] #pl-overlay {
+  background: #18171c;
+}
+
+#pl-overlay .pl-inner {
+  text-align: center;
+  animation: plFadeUp 0.9s ease both;
+}
+
+#pl-overlay .pl-avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(66, 90, 239, 0.28);
+  animation: plPulse 2.6s ease-in-out infinite;
+}
+
+#pl-overlay .pl-name {
+  margin-top: 18px;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: #425aef;
+  opacity: 0.85;
+}
+
+#pl-overlay.pl-done {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes plFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes plPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+/* ---------- 左下角音乐播放器 ---------- */
+#global-music-player .aplayer {
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(20, 30, 60, 0.14);
+}
+
+#global-music-player .aplayer.aplayer-fixed {
+  left: 18px;
+  bottom: 18px;
+}
+
+#global-music-player .aplayer .aplayer-info .aplayer-music .aplayer-title {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  #global-music-player .aplayer.aplayer-fixed {
+    left: 10px;
+    bottom: 10px;
+    transform: scale(0.92);
+    transform-origin: left bottom;
+  }
+}
+
+/* ---------- 细节微调 ---------- */
+#recent-posts .recent-post-item {
+  border-radius: 14px;
+}
+
+#site-title {
+  letter-spacing: 2px;
+}
+
+/* ---------- 白色封面：标题和导航改深色，不然白字看不见 ---------- */
+#page-header:not(.not-top-img) #site-title {
+  color: #262b39;
+  text-shadow: none;
+}
+
+#page-header:not(.not-top-img) #site-subtitle {
+  color: #6b7280;
+  text-shadow: none;
+}
+
+#page-header:not(.not-top-img) #scroll-down .scroll-down-effects {
+  color: #9aa3b2;
+}
+
+#page-header:not(.not-top-img):not(.nav-fixed) #nav .site-name,
+#page-header:not(.not-top-img):not(.nav-fixed) #nav #menus .site-page,
+#page-header:not(.not-top-img):not(.nav-fixed) #nav #toggle-menu,
+#page-header:not(.not-top-img):not(.nav-fixed) #nav #search-button {
+  color: #262b39 !important;
+  text-shadow: none !important;
+}

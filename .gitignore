@@ -1,0 +1,18 @@
+node_modules/
+public/
+.deploy_git/
+db.json
+themes/
+.pnpm-store/
+.token
+*.log
+.DS_Store
+Thumbs.db
+
+# 本地临时文件
+_tmp/
+_probe.py
+_gen_assets.py
+_get_theme.py
+_wt*.py
+.dsh-probe.txt
