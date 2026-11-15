@@ -106,6 +106,18 @@ html[data-theme='dark'] #pl-overlay {
   text-shadow: none;
 }
 
+/* 文章页顶部：标题和文章信息同样改深色 */
+#page-header:not(.not-top-img) #post-info .post-title {
+  color: #262b39;
+  text-shadow: none;
+}
+
+#page-header:not(.not-top-img) #post-info #post-meta,
+#page-header:not(.not-top-img) #post-info #post-meta a {
+  color: #6b7280;
+  text-shadow: none;
+}
+
 #page-header:not(.not-top-img) #site-subtitle {
   color: #6b7280;
   text-shadow: none;
