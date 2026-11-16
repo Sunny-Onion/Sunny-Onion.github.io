@@ -14,6 +14,7 @@ menu:
   Archives: /archives/ || fas fa-archive
   Tags: /tags/ || fas fa-tags
   Categories: /categories/ || fas fa-folder
+  Friends: /link/ || fas fa-link
   About: /about/ || fas fa-user
 
 # 社交图标（只放 GitHub）

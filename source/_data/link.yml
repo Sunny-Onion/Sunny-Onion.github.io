@@ -1,0 +1,14 @@
+# 友链配置
+# 想加人就在 link_list 下面按同样的格式新增一条（注意缩进对齐）
+#   name   显示的名字
+#   link   对方的博客地址
+#   avatar 对方的头像图片地址（也可以放本地：/images/xxx.jpg）
+#   descr  一句话介绍
+
+- class_name: 朋友们
+  class_desc: 一行人，一些地方
+  link_list:
+    - name: ksenr's blog
+      link: https://ksenrii.github.io/
+      avatar: /images/flink-ksenr.jpg
+      descr: "Just a catgirl's blog :)"
