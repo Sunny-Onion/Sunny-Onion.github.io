@@ -82,6 +82,26 @@ html[data-theme='dark'] #pl-overlay {
   font-size: 13px;
 }
 
+/* 底部滚动歌词条（APlayer 自带，固定在页面底部、横向居中） */
+.aplayer.aplayer-fixed .aplayer-lrc {
+  bottom: 6px;
+  pointer-events: none;
+}
+
+.aplayer.aplayer-fixed .aplayer-lrc p {
+  font-size: 15px;
+  color: #3a4152;
+  text-shadow:
+    0 0 6px rgba(255, 255, 255, 0.96),
+    0 0 14px rgba(255, 255, 255, 0.9),
+    0 1px 2px rgba(255, 255, 255, 0.95);
+}
+
+.aplayer.aplayer-fixed .aplayer-lrc p.aplayer-lrc-current {
+  color: #1f2433;
+  opacity: 1;
+}
+
 @media screen and (max-width: 768px) {
   #global-music-player .aplayer.aplayer-fixed {
     left: 10px;
