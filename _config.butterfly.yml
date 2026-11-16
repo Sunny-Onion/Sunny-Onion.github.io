@@ -35,10 +35,10 @@ disable_top_img: false
 
 default_top_img:
 index_img: /images/banner.jpg
-archive_img:
-tag_img:
+archive_img: /images/page-archives.jpg
+tag_img: /images/page-tags.jpg
 tag_per_img:
-category_img:
+category_img: /images/page-categories.jpg
 category_per_img:
 footer_img: false
 background:
