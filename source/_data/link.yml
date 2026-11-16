@@ -5,8 +5,8 @@
 #   avatar 对方的头像图片地址（也可以放本地：/images/xxx.jpg）
 #   descr  一句话介绍
 
-- class_name: 朋友们
-  class_desc: 一行人，一些地方
+- class_name: 猫娘
+  class_desc: 喵喵，喵喵喵喵
   link_list:
     - name: ksenr's blog
       link: https://ksenrii.github.io/
