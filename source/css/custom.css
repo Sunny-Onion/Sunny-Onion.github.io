@@ -135,36 +135,38 @@ html[data-theme='dark'] #pl-overlay {
   text-shadow: none !important;
 }
 
-/* 带顶图的子页面：字用深色 + 白色描边，不压任何底色 */
-#page-header:not(.not-top-img):not(.full_page) #nav a,
-#page-header:not(.not-top-img):not(.full_page) #nav .site-page,
-#page-header:not(.not-top-img):not(.full_page) #nav .site-name,
-#page-header:not(.not-top-img):not(.full_page) #nav i,
-#page-header:not(.not-top-img):not(.full_page) #nav #search-button {
-  color: #1f2433 !important;
-  -webkit-text-stroke: 0.6px rgba(255, 255, 255, 0.85);
+/* 子页面（归档/标签/分类/关于/友链）：白字 + 深色描边，不压任何底色 */
+#page-header:not(.not-top-img):not(.full_page).not-home-page #nav a,
+#page-header:not(.not-top-img):not(.full_page).not-home-page #nav .site-page,
+#page-header:not(.not-top-img):not(.full_page).not-home-page #nav .site-name,
+#page-header:not(.not-top-img):not(.full_page).not-home-page #nav i,
+#page-header:not(.not-top-img):not(.full_page).not-home-page #nav #search-button {
+  color: #ffffff !important;
+  -webkit-text-stroke: 0.5px rgba(18, 22, 36, 0.35);
   text-shadow:
-    -1.5px -1.5px 0 rgba(255, 255, 255, 0.95),
-    1.5px -1.5px 0 rgba(255, 255, 255, 0.95),
-    -1.5px 1.5px 0 rgba(255, 255, 255, 0.95),
-    1.5px 1.5px 0 rgba(255, 255, 255, 0.95),
-    0 -1.5px 0 rgba(255, 255, 255, 0.95),
-    0 1.5px 0 rgba(255, 255, 255, 0.95),
-    -1.5px 0 0 rgba(255, 255, 255, 0.95),
-    1.5px 0 0 rgba(255, 255, 255, 0.95) !important;
+    -1.5px -1.5px 0 rgba(18, 22, 36, 0.75),
+    1.5px -1.5px 0 rgba(18, 22, 36, 0.75),
+    -1.5px 1.5px 0 rgba(18, 22, 36, 0.75),
+    1.5px 1.5px 0 rgba(18, 22, 36, 0.75),
+    0 -1.5px 0 rgba(18, 22, 36, 0.75),
+    0 1.5px 0 rgba(18, 22, 36, 0.75),
+    -1.5px 0 0 rgba(18, 22, 36, 0.75),
+    1.5px 0 0 rgba(18, 22, 36, 0.75),
+    0 2px 8px rgba(0, 0, 0, 0.25) !important;
 }
 
-/* 这些页面的标题同样用描边 */
-#page-header.not-home-page #post-info .post-title {
-  color: #1f2433;
-  -webkit-text-stroke: 0.8px rgba(255, 255, 255, 0.9);
+/* 这些页面的标题同样白字 + 深描边 */
+#page-header:not(.not-top-img).not-home-page #post-info .post-title {
+  color: #ffffff;
+  -webkit-text-stroke: 0.6px rgba(18, 22, 36, 0.3);
   text-shadow:
-    -2px -2px 0 rgba(255, 255, 255, 0.95),
-    2px -2px 0 rgba(255, 255, 255, 0.95),
-    -2px 2px 0 rgba(255, 255, 255, 0.95),
-    2px 2px 0 rgba(255, 255, 255, 0.95),
-    0 -2px 0 rgba(255, 255, 255, 0.95),
-    0 2px 0 rgba(255, 255, 255, 0.95),
-    -2px 0 0 rgba(255, 255, 255, 0.95),
-    2px 0 0 rgba(255, 255, 255, 0.95);
+    -2px -2px 0 rgba(18, 22, 36, 0.7),
+    2px -2px 0 rgba(18, 22, 36, 0.7),
+    -2px 2px 0 rgba(18, 22, 36, 0.7),
+    2px 2px 0 rgba(18, 22, 36, 0.7),
+    0 -2px 0 rgba(18, 22, 36, 0.7),
+    0 2px 0 rgba(18, 22, 36, 0.7),
+    -2px 0 0 rgba(18, 22, 36, 0.7),
+    2px 0 0 rgba(18, 22, 36, 0.7),
+    0 4px 14px rgba(0, 0, 0, 0.3);
 }
