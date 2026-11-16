@@ -134,3 +134,29 @@ html[data-theme='dark'] #pl-overlay {
   color: #262b39 !important;
   text-shadow: none !important;
 }
+
+/* 带顶图的子页面：导航条加一层浅色毛玻璃，任何图片上都看得清 */
+#page-header:not(.not-top-img):not(.full_page) #nav {
+  background: rgba(255, 255, 255, 0.66);
+  -webkit-backdrop-filter: saturate(160%) blur(10px);
+  backdrop-filter: saturate(160%) blur(10px);
+}
+
+#page-header:not(.not-top-img):not(.full_page) #nav a,
+#page-header:not(.not-top-img):not(.full_page) #nav .site-page,
+#page-header:not(.not-top-img):not(.full_page) #nav .site-name,
+#page-header:not(.not-top-img):not(.full_page) #nav i,
+#page-header:not(.not-top-img):not(.full_page) #nav #search-button {
+  color: #262b39 !important;
+  text-shadow: none !important;
+}
+
+/* 这些页面的标题加半透明底，压在图上也能读 */
+#page-header.not-home-page #post-info .post-title {
+  display: inline-block;
+  padding: 2px 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
